@@ -33,6 +33,11 @@ public class VoulCount {
         return vowelCount;
     }
 
-    
+    public static void main(String[] args) {
+        // Test the function
+        String sentence = "Hello, how many vowels are here?";
+        int numberOfVowels = countVowels(sentence);
+        System.out.println("Number of vowels in the sentence: " + numberOfVowels);
+    } 
 }
 
