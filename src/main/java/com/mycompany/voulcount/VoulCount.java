@@ -11,20 +11,21 @@ package com.mycompany.voulcount;
 public class VoulCount {
 
     
+   // Method to count vowels in a given string
     public static int countVowels(String sentence) {
-        
+        // Convert the sentence to lowercase
         String lowerCaseSentence = sentence.toLowerCase();
         int vowelCount = 0;
 
-        
+        // String containing all the vowels
         String vowels = "aeiou";
 
-       
+        // Iterate through each character of the sentence
         for (int i = 0; i < lowerCaseSentence.length(); i++) {
-            
+            // Get the current character
             char currentChar = lowerCaseSentence.charAt(i);
             
-            
+            // Check if the character is a vowel by looking for its index in the 'vowels' string
             if (vowels.indexOf(currentChar) != -1) {
                 vowelCount++;
             }
@@ -38,6 +39,6 @@ public class VoulCount {
         String sentence = "Hello, how many vowels are here?";
         int numberOfVowels = countVowels(sentence);
         System.out.println("Number of vowels in the sentence: " + numberOfVowels);
-    } 
+    }
 }
 
